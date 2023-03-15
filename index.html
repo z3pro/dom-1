@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div"></div>
+    
+    <script>
+        const div = document.getElementById('div');
+        const label = document.createElement('label');
+        label.innerText = 'Nhập nội dung tìm kiếm';
+        const input = document.createElement('input');
+        const a = document.createElement('a');
+        a.innerText = 'Tìm kiếm nâng cao';
+        a.href = '#';
+        a.onclick = ()=>{
+            const display =  select.style.display
+            if (display == 'none'){
+                select.style.display = 'block'
+            } else {
+                select.style.display = 'none'
+            }
+        }
+        const button = document.createElement('button');
+        button.innerText='Tìm kiếm'
+        button.style.display = 'block'
+        const select = document.createElement('select');
+        select.style.display = 'none'
+        const option1 = document.createElement('option')
+        option1.innerText = 'quần áo'
+        const option2 = document.createElement('option')
+        option2.innerText = 'giày dép'
+        select.appendChild(option1)
+        select.appendChild(option2)
+        div.appendChild(label);
+        div.appendChild(input);
+        div.appendChild(a);
+        div.appendChild(select);
+        div.appendChild(button);
+    </script>
+</body>
+</html>
